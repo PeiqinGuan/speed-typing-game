@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: steelblue;
+  color:sandybrown;
+}
+
+body, .text-input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  background-color: sandybrown;
+  color: rgb(16, 67, 108);
+  width: 500px;
+  max-width: 90vw;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+}
+
+.timer {
+  position: absolute;
+  top: 2rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text {
+  margin: .5rem calc(3px + 1rem) 1rem calc(3px + 1rem);
+}
+
+.text-input {
+  width: 100%;
+  height: 10rem;
+  border-radius: .5rem;
+  background: transparent;
+  border: 3px solid rgb(172, 116, 68);
+  outline: none;
+  padding: .5rem 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.text-input:focus {
+  border-color: black;
+}
+
+.correct {
+  color: rgb(67, 251, 0);
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
